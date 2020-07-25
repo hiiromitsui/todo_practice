@@ -1,6 +1,6 @@
 <?php
 
-require_once('Model.php');
+require_once('Models/Task.php');
 
 class Task extends Model
 {

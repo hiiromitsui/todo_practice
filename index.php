@@ -1,16 +1,14 @@
 <?php
 // タスクの一覧表示機能
 // ファイルの読み込み
-
-
-// データの取得
-
 require_once('Models/Task.php');
 require_once('function.php');
-
-$task=new Task();
-$tasks=$task->getAll();
+// インスタンス化
+$task = new Task();
+$tasks = $task->getAll();
 // var_dump($tasks);
+// データの取得
+
 
 
 
