@@ -3,19 +3,19 @@
 // ファイルの読み込み
 require_once('Models/Task.php');
 
+
 // データの受け取り
-$title =$_POST['title'];
-$contents=$_POST['contents'];
-$currentTinme=date("Y/m/d H:i:s");
+$title = $_POST['title'];
+$contents = $_POST['contents'];
+$currentTime = date("Y/m/d H:i:s");
 
 
 // DBへのデータ保存
-$task= new Task();
-$task->create([$title,$contents,$currentTime]);
-
-
+$task = new Task();
+$task->creat($title,$contents,$currentTime);
 
 // リダイレクト
-header('location :index.php');
+header('location:index.php');
 exit;
+
 
